@@ -1,0 +1,24 @@
+{
+  "name": "@apexfission/card-detection-lite",
+  "version": "0.1.0",
+  "description": "Framework-neutral browser port of android.card_detection_lite",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./element": "./src/ui/card-detector-element.js",
+    "./tfjs-tflite": "./src/inference/tfjs-tflite-engine.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "dev": "vite demo",
+    "build:demo": "vite build demo"
+  },
+  "peerDependencies": {
+    "@tensorflow/tfjs-core": ">=4.0.0",
+    "@tensorflow/tfjs-tflite": ">=0.0.1-alpha.10"
+  },
+  "devDependencies": {
+    "vite": "^7.1.0"
+  }
+}
